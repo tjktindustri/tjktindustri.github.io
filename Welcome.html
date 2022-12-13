@@ -1,0 +1,74 @@
+<html>
+<Head>
+<Title>Welcome</Title>
+</head>
+<style>
+   body{
+	padding:50px 50 px;
+	background: powder-blue;
+</style>
+  <center>
+  <body onload="p()">
+  <script languange="JavaScript">
+   var pesan ="Welcome To My Website<<------------------------------------>> ";
+   function p()
+   {
+    document.basis.kotak.value=pesan;
+    pesan=pesan.substr(1,pesan.length)+pesan.substr(0,1);
+    window.status=pesan;
+    setTimeout("p()",150);
+   }
+  </script>
+  <form method="post" name="basis">
+  <input type="text" name="kotak" rows="20" cols="70">
+</form>
+</body>
+</html>
+
+<html>
+<body>
+<SCRIPT LANGUAGE="Javascript">
+   function konek1()
+  {
+   if(document.pilihan.pilih.options[0].selected)
+  {
+   window.location.href="Latihan Perulangan For.HTML";
+  }
+   else if (document.pilihan.pilih.options[1].selected)
+  {
+   window.location.href="Latihan Perulangan While.HTML";
+  }
+   else if (document.pilihan.pilih.options[2].selected)
+  {
+   window.location.href="Perhitungan Bunga.HTML";
+  }
+   return true;
+  }
+   function konek2()
+  {
+    var pilihint;
+    var pilihstr;
+    pilihint=document.pilihan.pilih.selectedIndex;
+    pilihstr=document.pilihan.pilih.options[pilihint].text;
+    document.pilihan.pilihteks.value=" Go To " + pilihstr + "!" ;
+  }
+</SCRIPT>
+<CENTER>
+<FORM NAME="pilihan">
+<h1><B>MENU PILIHAN DENGAN TOMBOL</B></h1>
+<P><SELECT NAME="pilih" ONCHANGE="konek2()" MULTIPLE SIZE="4">
+ <OPTION>Latihan Perulangan For</OPTION>
+ <OPTION>Latihan Perulangan While</OPTION>
+ <OPTION>Perhitungan Bunga</OPTION>
+ </SELECT>
+ </P>
+<P><BR>
+<INPUT TYPE="button" name="pilihteks" value"" size="40" maxlength="40">
+</P>
+<P>
+<INPUT TYPE="button" NAME="Gobutton" VALUE="Goo!!"
+ONCLICK="konek1()">
+</p>
+</form>
+</body>
+</html>

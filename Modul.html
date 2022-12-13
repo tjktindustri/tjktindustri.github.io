@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Latihan Membuat Menu Dropdown Dengan CSS</title>
+   <link rel="stylesheet" href="css.css">
+</head>
+<style>
+   
+.body
+{
+   background-image: url(img.jpg);
+}
+.menu_utama {
+   display: inline-block;
+   vertical-align: top;
+   width: 200px;
+   text-align:center;
+   background-color: #11698e;
+   color: white;
+   border: none;
+   cursor: pointer;
+   padding:10px 15px;
+    
+}
+.menu_utama:hover{
+   
+   background-color: #19456b;
+}
+.menu_sub {
+   display: none;
+   margin-top: 10px;
+   list-style-type: none;
+   margin-left: -55px;
+   margin-bottom: -20px;
+   width: 220px;
+}
+.menu_sub a{
+   display: block;
+   width: 100%;
+   color: white;
+   padding: 20px;
+   text-decoration: none;
+   border-bottom:solid 1px #a3d2ca;
+   background-color: navy;
+}
+.menu_sub a:hover{
+   background-color: #a3d2ca;
+}
+#menu_dropdown .menu_utama:hover > .menu_sub {
+   display:block;
+}
+</style>
+<body>
+<ul id="menu_dropdown">
+
+   <li class="menu_utama">home
+   <ul class="menu_sub">
+   <li><a href="XI TJKT 1.html">awal</a></li>
+ </ul>
+</li>
+
+   <li class="menu_utama">Yang HTML HTML ajah
+   <ul class="menu_sub">
+     <li><a href="YHHA/LATIHAN HTML 1.html">Latihan HTML 1</a></li>
+     <li><a href="YHHA/LATIHAN HTML 2.html">Latihan HTML 2</a></li>
+     <li><a href="YHHA/LATIHAN HTML 3.html">Latihan HTML 3</a></li>
+     <li><a href="YHHA/LATIHAN HTML 4.html">Latihan HTML 4</a></li>
+     <li><a href="YHHA/LATIHAN HTML 5.html">Latihan HTML 5</a></li>
+     <li><a href="YHHA/LATIHAN HTML 6.html">Latihan HTML 6</a></li>
+     <li><a href="YHHA/LATIHAN HTML 7.html">Latihan HTML 7</a></li>
+
+   </ul>
+   </li>
+   <li class="menu_utama">Yang JAVA JAVA ajah
+      <ul class="menu_sub">
+        <li><a href="YJJA/IfElse.html">Latihan If Else</a></li>
+        <li><a href="YJJA/ContohKasus.html">Latihan ContohKasus</a></li>
+        <li><a href="YJJA/memasukkandata.html">Latihan memasukkandata</a></li>
+        <li><a href="YJJA/ObjekCheckbox.html">Latihan ObjekCheckbox</a></li>
+        <li><a href="YJJA/ObjekSelect.html">Latihan ObjekSelect</a></li>
+        <li><a href="YJJA/ObjekTextArea.html">Latihan ObjekTextArea</a></li>
+        <li><a href="YJJA/objekradio.html">Latihan objekradio</a></li>
+        <li><a href="YJJA/objektext.html">Latihan objektext</a></li>
+        <li><a href="YJJA/PercabanganMajemuk.html">Latihan PercabanganMajemuk</a></li>
+        <li><a href="YJJA/PerulanganDoWhile.html">Latihan PerulanganDoWhile</a></li>
+        <li><a href="YJJA/PerulanganWhile.html">Latihan PerulanganWhile</a></li>
+      </ul>
+      </li>
+  
+</ul>
+
+</body>
+</html>
